@@ -6,16 +6,27 @@
   font-family: "Quicksand";
   color: #333;
 }
+.p20 {
+  padding: 20px;
+}
+body {
+  background: #F9F2ED;
+}
 .navbar {
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 70%;
+  max-width: 60%;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #3C75F0;
+  color: #CDB699;
+}
+.navbar-logo {
+  font-weight: bold;
+  color: #CDB699;
+  font-style: italic;
 }
 .navbar .links {
   margin-left: auto;
@@ -26,19 +37,18 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #3C75F0;
+  color: #BB6464;
 }
 .content {
-  max-width: 70%;
+  max-width: 60%;
   margin: 40px auto;
   padding: 20px;
 }
-
 /* blog previews / list */
 .blog-preview {
-  padding: 10px 16px;
+  padding: 20px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid #ede6e1;
   border-radius: 15px;
 }
 .blog-preview:hover {
@@ -46,25 +56,31 @@
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #3C75F0;
+  color: #BB6464;
   margin-bottom: 8px;
+}
+.blog-preview p {
+  color: #C3DBD9;
 }
 .blog-preview a{
   text-decoration: none;
 }
 
 /* blog details page */
+.blog-details{
+  padding: 0 20px;
+}
 .blog-details h2 {
   font-size: 20px;
-  color: #3C75F0;
+  color: #BB6464;
   margin-bottom: 10px;
 }
 .blog-details div {
   margin: 20px 0;
 }
 .blog-details button {
-  background: #3C75F0;
-  color: #fff;
+  background: #C8F2EF;
+  color: #333;
   border: 0;
   padding: 8px;
   border-radius: 8px;
@@ -73,9 +89,8 @@
 
 /* create new blog form */
 .create {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
+  max-width: 60%;
+  padding: 0 20px;
 }
 .create label {
   text-align: left;
@@ -83,33 +98,37 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #3C75F0;
+  color: #BB6464;
   margin-bottom: 30px;
 }
 .create input, .create textarea, .create select {
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
-  border: 1px solid #ddd;
+  border: none;
   box-sizing: border-box;
   display: block;
+  border-radius: 5px;
+  background: #C3DBD9;
+}
+.create label {
+  color: #CDB699;
+}
+.create input {
+  height: 50px;
+}
+.create textarea {
+  resize: none;
+  height: 150px;
 }
 .create button {
-  background: #3C75F0;
+  background: #BB6464;
   color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
 }
-input:focus, textarea:focus {
+.create input:focus, .create textarea:focus {
   outline: none;
-}
-.create button {
-  background: #3C75F0;
-  color: #fff;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
 }
